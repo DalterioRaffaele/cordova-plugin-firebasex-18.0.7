@@ -195,7 +195,7 @@
 				<pod name="GoogleTagManager" spec="8.0.0"/>
 			</pods>
 			<config-file target="*-Podfile" parent="/*">
-                <string>:ios, '13.0'</string>
+                <string>platform:ios, '13.0'</string>
             </config-file>
 		</podspec>
 
