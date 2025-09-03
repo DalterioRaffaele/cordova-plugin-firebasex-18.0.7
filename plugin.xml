@@ -155,6 +155,9 @@
 		<config-file target="*-Info.plist" parent="FIREBASE_MESSAGING_IMMEDIATE_PAYLOAD_DELIVERY">
 			<string>$FIREBASE_MESSAGING_IMMEDIATE_PAYLOAD_DELIVERY</string>
 		</config-file>
+		<config-file target="project.pbxproj" parent="IPHONEOS_DEPLOYMENT_TARGET">
+            <string>13.0</string>
+        </config-file>
 
 		<resource-file src="src/ios/GoogleService-Info.plist" />
 
@@ -183,7 +186,7 @@
 				<pod name="FirebaseMessaging" spec="11.8.0"/>
 				<pod name="FirebasePerformance" spec="11.8.0"/>
 				<pod name="FirebaseRemoteConfig" spec="11.8.0"/>
-				<pod name="FirebaseInAppMessaging" spec="11.8.0-beta"/>
+				<pod name="FirebaseInAppMessaging" spec="11.8.0"/>
 				<pod name="FirebaseFirestore" spec="11.8.0"/>
 				<pod name="FirebaseCrashlytics" spec="11.8.0"/>
 				<pod name="FirebaseFunctions" spec="11.8.0"/>
@@ -191,6 +194,9 @@
 				<pod name="GoogleSignIn" spec="7.1.0"/>
 				<pod name="GoogleTagManager" spec="8.0.0"/>
 			</pods>
+			<config-file target="*-Podfile" parent="platform">
+                <string>:ios, '13.0'</string>
+            </config-file>
 		</podspec>
 
 	</platform>
